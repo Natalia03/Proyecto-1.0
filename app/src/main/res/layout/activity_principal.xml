@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.josesanjuanelo.proyectomovil.Principal">
+
+    <TabHost
+        android:id="@+id/tabhPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimary" />
+
+            <com.miguelcatalan.materialsearchview.MaterialSearchView
+                android:id="@+id/search_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignBottom="@+id/toolbar">
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual"
+                                android:text="@string/tour"
+                                android:textAlignment="center"
+                                android:textColor="@android:color/holo_blue_dark"
+                                android:textSize="46sp"
+                                android:textStyle="bold" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/textView4"
+                                    android:layout_width="123dp"
+                                    android:layout_height="wrap_content" />
+
+                                <TextView
+                                    android:id="@+id/textView2"
+                                    android:layout_width="189dp"
+                                    android:layout_height="185dp"
+                                    android:layout_weight="1"
+                                    android:background="@drawable/inicio"
+                                    android:textAppearance="@style/TextAppearance.AppCompat" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/textView3"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual"
+                                android:text="@string/departamentos"
+                                android:textColor="@android:color/background_dark"
+                                android:textSize="24sp"
+                                android:textStyle="bold" />
+
+                            <Spinner
+                                android:id="@+id/spnDepartamentos"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <SearchView
+                                    android:id="@+id/txtBuscar"
+                                    android:layout_width="114dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="0.93" />
+
+                                <Button
+                                    android:id="@+id/btnBuscarPrincipal"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@color/colorAccent"
+                                    android:fontFamily="casual"
+                                    android:text="@string/buscar"
+                                    android:textColor="@android:color/background_dark"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/btnMostrar"
+                                style="@style/Widget.AppCompat.Button.Colored"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="casual"
+                                android:text="@string/mostrar"
+                                android:textColor="@android:color/black" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/btnMostrarRegistro"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="mostrarRegistro1"
+                            android:text="@string/mostrar" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:layout_weight="1"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/r5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="RadioButton" />
+
+                                <RadioButton
+                                    android:id="@+id/r4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="RadioButton" />
+
+                                <RadioButton
+                                    android:id="@+id/r3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="RadioButton" />
+
+                                <RadioButton
+                                    android:id="@+id/r2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="RadioButton" />
+
+                                <RadioButton
+                                    android:id="@+id/r1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:text="RadioButton" />
+
+                            </LinearLayout>
+
+                        </RadioGroup>
+
+                        <Button
+                            android:id="@+id/btnMostrarListado"
+                            style="@style/Widget.AppCompat.Button.Colored"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:onClick="mostrarListado1"
+                            android:text="@string/mostrar" />
+
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary" />
+
+            </com.miguelcatalan.materialsearchview.MaterialSearchView>
+
+        </LinearLayout>
+    </TabHost>
+
+</RelativeLayout>

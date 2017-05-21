@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ProyectoMovil</string>
+    <string name="departamentos">Departamentos</string>
+    <string name="buscar">Buscar</string>
+    <string name="tour">Tourisme NAJOS</string>
+    <string name="mostrar">Mostrar</string>
+    <string name="title_activity_registro_ciudades">RegistroCiudades</string>
+    <string name="regitro">Registro</string>
+    <string name="ingreso">Ingrese Ciudad</string>
+    <string name="registrar">Registrar</string>
+    <string name="meta">Meta</string>
+    <string name="antioquia">Antioquia</string>
+    <string name="cauca">Cauca</string>
+    <string name="magdalena">Magdalena</string>
+    <string name="cordoba">Cordoba</string>
+    <string name="narinio">Nariño</string>
+    <string name="tolima">Tolima</string>
+    <string name="guania">Guania</string>
+    <string name="atlantico">Atlantico</string>
+    <string name="valledel">Valle del Cauca</string>
+    <string name="mensaje">Ciudad guardada con exito</string>
+    <string name="error_1">Por favor digite una ciudad</string>
+    <string name="guatape">GUATAPE.</string>
+    <string name="guatapeintro">Hoy día, Guatapé cuenta con grandes potenciales para explotar el turismo religioso, el agroturismo, el ecoturismo, la cultura y la aventura. Cuenta con hoteles, restaurantes, barcos, lanchas y sitios turísticos para disfrutar, contemplar, meditar y descansar.</string>
+    <string name="gua">Los hoteles de 3 estrellas tienen un precio medio de $ 94.904.</string>
+    <string-array name="deptos">
+        <item>@string/antioquia</item>
+        <item>@string/atlantico</item>
+        <item>@string/cauca</item>
+        <item>@string/cordoba</item>
+        <item>@string/guania</item>
+        <item>@string/magdalena</item>
+        <item>@string/meta</item>
+        <item>@string/narinio</item>
+        <item>@string/tolima</item>
+        <item>@string/valledel</item>
+    </string-array>
+</resources>

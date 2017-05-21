@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.josesanjuanelo.proyectomovil">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Principal" />
+        <activity android:name=".ListviewDepartamentos" />
+        <activity android:name=".PantallaInicio">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegistroCiudades" />
+        <activity android:name=".ListarCiudad" />
+        <activity android:name=".LaMacarena" />
+        <activity android:name=".Lejania" />
+        <activity android:name=".Guatape" />
+        <activity android:name=".Penol" />
+        <activity android:name=".Baranoa" />
+        <activity android:name=".Salgar" />
+        <activity android:name=".Gorgona" />
+        <activity android:name=".Popayan" />
+        <activity android:name=".Tanti" />
+        <activity android:name=".Covenas" />
+        <activity android:name=".Maloca" />
+        <activity android:name=".CocoViejo" />
+        <activity android:name=".Lajas" />
+        <activity android:name=".MuseoOro" />
+        <activity android:name=".Mariquita" />
+        <activity android:name=".Libano" />
+        <activity android:name=".Tayrona" />
+        <activity android:name=".Aracataca" />
+        <activity android:name=".Pance" />
+        <activity android:name=".Cartago" />
+        <activity android:name=".Mapa_Guatape"></activity>
+    </application>
+
+</manifest>
